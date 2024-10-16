@@ -8,6 +8,7 @@ export default function Home() {
     async function fetchUsers() {
       const response = await fetch('/api/users');       // APIエンドポイントにアクセス
       const data = await response.json();               // データをJSON形式で取得
+      console.log(data)
       setUsers(data);                                   // データをステートに保存
       console.log(data)
     }
