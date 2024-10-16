@@ -19,6 +19,7 @@ export default function Home() {
   return (
     <div>
       <h1>Users List</h1>
+      <p>ローカルで作ったDBのテーブルをここに表示します。</p>
       <ul>
         {users && users.map(user => (
           <li key={user.id}>
